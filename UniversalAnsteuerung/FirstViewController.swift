@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Moscapsule
 
 class FirstViewController: UIViewController {
 
