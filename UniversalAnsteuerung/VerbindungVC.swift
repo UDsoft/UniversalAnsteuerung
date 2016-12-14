@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Moscapsule
+import CocoaMQTT
 
 class VerbindungVC: UIViewController {
     
@@ -28,7 +28,7 @@ class VerbindungVC: UIViewController {
     
     //Variables
     var ipAddressValue : String = ""
-    var port:Int32 = 0
+    var port:Int = 0
     var usernameValue:String = ""
     var passwordvalue:String = ""
     
@@ -45,7 +45,7 @@ class VerbindungVC: UIViewController {
             ipAddressValue = ipAddress.text!
         }
         if(appMemory.string(forKey: Keys.Mqtt_Port.rawValue) != nil){
-            port = Int32(appMemory.integer(forKey: Keys.Mqtt_Port.rawValue))
+            port = Int(appMemory.integer(forKey: Keys.Mqtt_Port.rawValue))
             portNummer.text = String(port)
         }
         
@@ -68,14 +68,14 @@ class VerbindungVC: UIViewController {
     }
     
     @IBAction func mqttAnonymus(_ sender: UISwitch) {
-        hide_UserPass(sender.isOn)
+        _ = hide_UserPass(sender.isOn)
 
     }
     
     @IBAction func verbindenAction(_ sender: UIButton) {
         //Save All new Update to AppMemory
         ipAddressValue = ipAddress.text!
-        port = Int32(portNummer.text!)!
+        port = Int(portNummer.text!)!
         appMemory.set(ipAddressValue, forKey: Keys.Mqtt_Ip_Address.rawValue)
         appMemory.set(port, forKey: Keys.Mqtt_Port.rawValue)
         appMemory.set(anonymous, forKey: Keys.Mqtt_Anonymous.rawValue)
@@ -84,13 +84,12 @@ class VerbindungVC: UIViewController {
         passwordvalue = password.text!
         appMemory.set(passwordvalue, forKey: Keys.Mqtt_Password.rawValue)
         appMemory.set(usernameValue, forKey: Keys.Mqtt_UserName.rawValue)
+        }else{
+            appMemory.set("", forKey: Keys.Mqtt_Password.rawValue)
+            appMemory.set("", forKey: Keys.Mqtt_UserName.rawValue)
         }
-        var config = MQTTConfig.init(clientId: "Ipad", host: ipAddressValue, port: Int32(port), keepAlive: 20)
-        config.onConnectCallback = {ReturnCode in NSLog("Return Code is \(ReturnCode.description)")}
-        config.onMessageCallback = {mosquitto_message in NSLog("MQTT Message recieved : payload=\(mqttMessage.payloadString)")}
-        
-        var client = MQTT.newConnection(config)
         testUD()
+        
 
     }
     
