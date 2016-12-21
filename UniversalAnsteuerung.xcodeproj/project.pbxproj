@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3534936DDBE3E5B3199DCDEB /* Pods_UniversalAnsteuerungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5B20952A7F9A182748391B /* Pods_UniversalAnsteuerungTests.framework */; };
 		487FE7131DFF6A0400709405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7121DFF6A0400709405 /* AppDelegate.swift */; };
-		487FE7151DFF6A0400709405 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7141DFF6A0400709405 /* FirstViewController.swift */; };
-		487FE7171DFF6A0400709405 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7161DFF6A0400709405 /* SecondViewController.swift */; };
 		487FE71A1DFF6A0400709405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487FE7181DFF6A0400709405 /* Main.storyboard */; };
 		487FE71C1DFF6A0400709405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487FE71B1DFF6A0400709405 /* Assets.xcassets */; };
 		487FE71F1DFF6A0400709405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487FE71D1DFF6A0400709405 /* LaunchScreen.storyboard */; };
@@ -47,8 +45,6 @@
 		275FDC07D0CDE4F7DD98BC41 /* Pods_UniversalAnsteuerung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalAnsteuerung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487FE70F1DFF6A0300709405 /* UniversalAnsteuerung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalAnsteuerung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487FE7121DFF6A0400709405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		487FE7141DFF6A0400709405 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		487FE7161DFF6A0400709405 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		487FE7191DFF6A0400709405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487FE71B1DFF6A0400709405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487FE71E1DFF6A0400709405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,8 +137,6 @@
 				487FE7441DFF8F2800709405 /* Misc */,
 				487FE7431DFF8F1C00709405 /* Model */,
 				487FE7421DFF8F0900709405 /* ViewController */,
-				487FE7141DFF6A0400709405 /* FirstViewController.swift */,
-				487FE7161DFF6A0400709405 /* SecondViewController.swift */,
 			);
 			path = UniversalAnsteuerung;
 			sourceTree = "<group>";
@@ -485,11 +479,9 @@
 			files = (
 				487FE74D1DFFA22200709405 /* NSDefaultKeys.swift in Sources */,
 				487FE74B1DFF8FE600709405 /* AnsteuerungVC.swift in Sources */,
-				487FE7171DFF6A0400709405 /* SecondViewController.swift in Sources */,
 				487FE7131DFF6A0400709405 /* AppDelegate.swift in Sources */,
 				487FE7491DFF8FD600709405 /* EinstellungVC.swift in Sources */,
 				487FE7471DFF8FC700709405 /* VerbindungVC.swift in Sources */,
-				487FE7151DFF6A0400709405 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,12 +634,14 @@
 			baseConfigurationReference = 55DCE6887108590F36DAF3F6 /* Pods-UniversalAnsteuerung.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9RUC64926T;
 				INFOPLIST_FILE = UniversalAnsteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDSoft.UniversalAnsteuerung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -656,12 +650,14 @@
 			baseConfigurationReference = AEC4588EAD3A86AFF6BBFE0E /* Pods-UniversalAnsteuerung.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9RUC64926T;
 				INFOPLIST_FILE = UniversalAnsteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDSoft.UniversalAnsteuerung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
