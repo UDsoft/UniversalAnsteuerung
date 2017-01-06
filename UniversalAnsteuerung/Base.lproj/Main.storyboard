@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2016-01-06-image-9" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-zK-pSv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InputBox" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-zK-pSv">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                                 <color key="backgroundColor" red="0.62430900820319468" green="0.7276127543515406" blue="0.74153315355329952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -899,6 +899,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -912,7 +913,6 @@
                         <segue destination="ayl-Uw-m0O" kind="relationship" relationship="viewControllers" id="VPX-Ui-3Yu"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-412" y="-14"/>
         </scene>

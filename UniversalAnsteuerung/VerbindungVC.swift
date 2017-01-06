@@ -129,12 +129,14 @@ class VerbindungVC: UIViewController{
         
 
         mqttClient = MQTTSession.init(host:host, port: port, clientID: clientID, cleanSession: cleanSession, keepAlive: keepAlive, useSSL: useSSL);
+        
         mqttClient!.connect{(succeeded, error) -> Void in
-            if succeeded{
+            if (succeeded){
                self.showConnectionStatus(connectionStatus: true)
             }else{
                self.showConnectionStatus(connectionStatus: false)
             }
+            
       }
         
     }

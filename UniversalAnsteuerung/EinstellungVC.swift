@@ -9,12 +9,28 @@
 import UIKit
 
 class EinstellungVC: UIViewController {
-
+    
+    public let GPIODICTIONARYKEY = "GPIODICTIONARY"
    
     var appMemory = UserDefaults.standard
     
+    var gpioDictionary = [String:String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        print("NOW IN EINSTELLUNG")
+        if(appMemory.dictionary(forKey: GPIODICTIONARYKEY) == nil){
+            print("Dictionary Empty")
+        }else{
+            gpioDictionary = appMemory.dictionary(forKey: GPIODICTIONARYKEY) as! [String : String]
+            for (gpioPin , gpioName) in gpioDictionary {
+                print(gpioPin +  " : " + gpioName)
+            }
+        }
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +64,7 @@ class EinstellungVC: UIViewController {
                 sender.backgroundColor = UIColor.blue
                 sender.alpha = 0.8
                 sender.setTitleColor(UIColor.white, for: .normal)
+                self.gpioDictionary[String(gpioNum)] = gpioName
             }else{
                 sender.setTitle(defaultTitle, for: .normal)
                 sender.backgroundColor = UIColor.green
@@ -66,16 +83,6 @@ class EinstellungVC: UIViewController {
         
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }
