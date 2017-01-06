@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     let appMemory = UserDefaults.standard
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if(appMemory.value(forKey: Keys.Mqtt_Anonymous.rawValue) == nil){
             appMemory.set(true, forKey: Keys.Mqtt_Anonymous.rawValue)
         }
+        
+        
+        
         return true
     }
 

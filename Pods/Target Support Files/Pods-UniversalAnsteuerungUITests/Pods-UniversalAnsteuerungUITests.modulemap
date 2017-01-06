@@ -1,0 +1,6 @@
+framework module Pods_UniversalAnsteuerungUITests {
+  umbrella header "Pods-UniversalAnsteuerungUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

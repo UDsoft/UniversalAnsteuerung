@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3534936DDBE3E5B3199DCDEB /* Pods_UniversalAnsteuerungTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5B20952A7F9A182748391B /* Pods_UniversalAnsteuerungTests.framework */; };
+		48771E4D1E0ECFC4001C4ED5 /* VerbindungTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48771E4C1E0ECFC4001C4ED5 /* VerbindungTextField.swift */; };
+		48771E4F1E0F2E84001C4ED5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48771E4E1E0F2E84001C4ED5 /* Alert.swift */; };
 		487FE7131DFF6A0400709405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7121DFF6A0400709405 /* AppDelegate.swift */; };
-		487FE7151DFF6A0400709405 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7141DFF6A0400709405 /* FirstViewController.swift */; };
-		487FE7171DFF6A0400709405 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FE7161DFF6A0400709405 /* SecondViewController.swift */; };
 		487FE71A1DFF6A0400709405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487FE7181DFF6A0400709405 /* Main.storyboard */; };
 		487FE71C1DFF6A0400709405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487FE71B1DFF6A0400709405 /* Assets.xcassets */; };
 		487FE71F1DFF6A0400709405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487FE71D1DFF6A0400709405 /* LaunchScreen.storyboard */; };
@@ -45,10 +45,10 @@
 		00182E852350F554334E7D70 /* Pods-UniversalAnsteuerungTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalAnsteuerungTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UniversalAnsteuerungTests/Pods-UniversalAnsteuerungTests.release.xcconfig"; sourceTree = "<group>"; };
 		12D4324C922D2249F39AB627 /* Pods_UniversalAnsteuerungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalAnsteuerungUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275FDC07D0CDE4F7DD98BC41 /* Pods_UniversalAnsteuerung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalAnsteuerung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48771E4C1E0ECFC4001C4ED5 /* VerbindungTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbindungTextField.swift; sourceTree = "<group>"; };
+		48771E4E1E0F2E84001C4ED5 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		487FE70F1DFF6A0300709405 /* UniversalAnsteuerung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalAnsteuerung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487FE7121DFF6A0400709405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		487FE7141DFF6A0400709405 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		487FE7161DFF6A0400709405 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		487FE7191DFF6A0400709405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487FE71B1DFF6A0400709405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487FE71E1DFF6A0400709405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,8 +141,6 @@
 				487FE7441DFF8F2800709405 /* Misc */,
 				487FE7431DFF8F1C00709405 /* Model */,
 				487FE7421DFF8F0900709405 /* ViewController */,
-				487FE7141DFF6A0400709405 /* FirstViewController.swift */,
-				487FE7161DFF6A0400709405 /* SecondViewController.swift */,
 			);
 			path = UniversalAnsteuerung;
 			sourceTree = "<group>";
@@ -168,6 +166,7 @@
 		487FE7421DFF8F0900709405 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				488E573F1E0B632800BC17DB /* Extensions */,
 				487FE7461DFF8FC700709405 /* VerbindungVC.swift */,
 				487FE7481DFF8FD600709405 /* EinstellungVC.swift */,
 				487FE74A1DFF8FE600709405 /* AnsteuerungVC.swift */,
@@ -198,8 +197,17 @@
 			children = (
 				487FE71D1DFF6A0400709405 /* LaunchScreen.storyboard */,
 				487FE7181DFF6A0400709405 /* Main.storyboard */,
+				48771E4C1E0ECFC4001C4ED5 /* VerbindungTextField.swift */,
+				48771E4E1E0F2E84001C4ED5 /* Alert.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		488E573F1E0B632800BC17DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		A7C8A6B1F157D66CF84812F2 /* Frameworks */ = {
@@ -219,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 487FE7391DFF6A0400709405 /* Build configuration list for PBXNativeTarget "UniversalAnsteuerung" */;
 			buildPhases = (
-				72D4C2C793D641FA5CB09959 /* 📦 Check Pods Manifest.lock */,
+				72D4C2C793D641FA5CB09959 /* [CP] Check Pods Manifest.lock */,
 				487FE70B1DFF6A0000709405 /* Sources */,
 				487FE70C1DFF6A0000709405 /* Frameworks */,
 				487FE70D1DFF6A0000709405 /* Resources */,
-				6E4D61653B57BA3B6CD9B177 /* 📦 Embed Pods Frameworks */,
-				8BC793873F956E231071B51E /* 📦 Copy Pods Resources */,
+				6E4D61653B57BA3B6CD9B177 /* [CP] Embed Pods Frameworks */,
+				8BC793873F956E231071B51E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,12 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 487FE73C1DFF6A0400709405 /* Build configuration list for PBXNativeTarget "UniversalAnsteuerungTests" */;
 			buildPhases = (
-				F87EFB8EBC00C1D859399D82 /* 📦 Check Pods Manifest.lock */,
+				F87EFB8EBC00C1D859399D82 /* [CP] Check Pods Manifest.lock */,
 				487FE7211DFF6A0400709405 /* Sources */,
 				487FE7221DFF6A0400709405 /* Frameworks */,
 				487FE7231DFF6A0400709405 /* Resources */,
-				0910ECA3057B61C2A4D91482 /* 📦 Embed Pods Frameworks */,
-				CD2393D78196ECB0E3EC352A /* 📦 Copy Pods Resources */,
+				0910ECA3057B61C2A4D91482 /* [CP] Embed Pods Frameworks */,
+				CD2393D78196ECB0E3EC352A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,11 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 487FE73F1DFF6A0400709405 /* Build configuration list for PBXNativeTarget "UniversalAnsteuerungUITests" */;
 			buildPhases = (
-				70AD1B810A960FD4DFDC32A5 /* 📦 Check Pods Manifest.lock */,
+				70AD1B810A960FD4DFDC32A5 /* [CP] Check Pods Manifest.lock */,
 				487FE72C1DFF6A0400709405 /* Sources */,
 				487FE72D1DFF6A0400709405 /* Frameworks */,
 				487FE72E1DFF6A0400709405 /* Resources */,
-				CDB19B4F31B1796501D2CB18 /* 📦 Copy Pods Resources */,
+				CDB19B4F31B1796501D2CB18 /* [CP] Copy Pods Resources */,
+				746549F445900F8959763609 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,14 +365,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0910ECA3057B61C2A4D91482 /* 📦 Embed Pods Frameworks */ = {
+		0910ECA3057B61C2A4D91482 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +380,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerungTests/Pods-UniversalAnsteuerungTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E4D61653B57BA3B6CD9B177 /* 📦 Embed Pods Frameworks */ = {
+		6E4D61653B57BA3B6CD9B177 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,44 +395,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerung/Pods-UniversalAnsteuerung-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70AD1B810A960FD4DFDC32A5 /* 📦 Check Pods Manifest.lock */ = {
+		70AD1B810A960FD4DFDC32A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		72D4C2C793D641FA5CB09959 /* 📦 Check Pods Manifest.lock */ = {
+		72D4C2C793D641FA5CB09959 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8BC793873F956E231071B51E /* 📦 Copy Pods Resources */ = {
+		746549F445900F8959763609 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerungUITests/Pods-UniversalAnsteuerungUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC793873F956E231071B51E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,14 +455,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerung/Pods-UniversalAnsteuerung-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD2393D78196ECB0E3EC352A /* 📦 Copy Pods Resources */ = {
+		CD2393D78196ECB0E3EC352A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,14 +470,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerungTests/Pods-UniversalAnsteuerungTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CDB19B4F31B1796501D2CB18 /* 📦 Copy Pods Resources */ = {
+		CDB19B4F31B1796501D2CB18 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,19 +485,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UniversalAnsteuerungUITests/Pods-UniversalAnsteuerungUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F87EFB8EBC00C1D859399D82 /* 📦 Check Pods Manifest.lock */ = {
+		F87EFB8EBC00C1D859399D82 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -483,13 +507,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48771E4D1E0ECFC4001C4ED5 /* VerbindungTextField.swift in Sources */,
 				487FE74D1DFFA22200709405 /* NSDefaultKeys.swift in Sources */,
 				487FE74B1DFF8FE600709405 /* AnsteuerungVC.swift in Sources */,
-				487FE7171DFF6A0400709405 /* SecondViewController.swift in Sources */,
 				487FE7131DFF6A0400709405 /* AppDelegate.swift in Sources */,
 				487FE7491DFF8FD600709405 /* EinstellungVC.swift in Sources */,
 				487FE7471DFF8FC700709405 /* VerbindungVC.swift in Sources */,
-				487FE7151DFF6A0400709405 /* FirstViewController.swift in Sources */,
+				48771E4F1E0F2E84001C4ED5 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,12 +666,14 @@
 			baseConfigurationReference = 55DCE6887108590F36DAF3F6 /* Pods-UniversalAnsteuerung.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9RUC64926T;
 				INFOPLIST_FILE = UniversalAnsteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDSoft.UniversalAnsteuerung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -656,12 +682,14 @@
 			baseConfigurationReference = AEC4588EAD3A86AFF6BBFE0E /* Pods-UniversalAnsteuerung.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9RUC64926T;
 				INFOPLIST_FILE = UniversalAnsteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDSoft.UniversalAnsteuerung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

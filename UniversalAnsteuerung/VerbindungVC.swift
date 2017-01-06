@@ -7,59 +7,61 @@
 //
 
 import UIKit
-import Moscapsule
+import SwiftMQTT
 
-class VerbindungVC: UIViewController {
+class VerbindungVC: UIViewController{
     
-    @IBOutlet weak var ipAddress: UITextField!
-    @IBOutlet weak var portNummer: UITextField!
-    @IBOutlet weak var userName: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var anonymousOption: UISwitch!
+    @IBOutlet weak var ipAddressTextView: UITextField!
+    @IBOutlet weak var portNummerTextView: UITextField!
+    @IBOutlet weak var userNameTextView: UITextField!
+    @IBOutlet weak var passwordTextView: UITextField!
+    @IBOutlet weak var mqttSecureSwitch: UISwitch!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var passwordlabel: UILabel!
+    @IBOutlet weak var statusLight: UIImageView!
+    
     
     let appMemory = UserDefaults.standard
     
-    /*
-     True = if Broker accepts anonymous client.
-     False = if Broker do not accept anonymous client.
-    */
-    var anonymous:Bool = false
-    
-    
     //Variables
     var ipAddressValue : String = ""
-    var port:Int32 = 0
-    var usernameValue:String = ""
+    var port:Int = 0
+    var userNameValue:String = ""
     var passwordvalue:String = ""
-    
-    
-/*********************************************************************/
+    var isMqttAccessSecure:Bool = true
+    var mqttClient:MQTTSession?
+    /*********************************************************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //check Anonymous
-        anonymous = hide_UserPass(appMemory.bool(forKey: Keys.Mqtt_Anonymous.rawValue))
+        isMqttAccessSecure = showUsernamePasswordTextView(appMemory.bool(forKey: Keys.Mqtt_Anonymous.rawValue))
         
         if(appMemory.value(forKey:Keys.Mqtt_Ip_Address.rawValue) != nil){
-            ipAddress.text = appMemory.string(forKey: Keys.Mqtt_Ip_Address.rawValue)
-            ipAddressValue = ipAddress.text!
+            ipAddressTextView.text = appMemory.string(forKey: Keys.Mqtt_Ip_Address.rawValue)
+            ipAddressValue = ipAddressTextView.text!
         }
         if(appMemory.string(forKey: Keys.Mqtt_Port.rawValue) != nil){
-            port = Int32(appMemory.integer(forKey: Keys.Mqtt_Port.rawValue))
-            portNummer.text = String(port)
+            port = Int(appMemory.integer(forKey: Keys.Mqtt_Port.rawValue))
+            portNummerTextView.text = String(port)
         }
         
         //To avoid crush check if the anonymousOption is not hidden
-        if(!anonymous){
+        if(isMqttAccessSecure){
+            mqttSecureSwitch.setOn(true, animated: false)
             if(appMemory.string(forKey: Keys.Mqtt_UserName.rawValue) != nil){
-                userName.text = appMemory.string(forKey: Keys.Mqtt_UserName.rawValue)
-                usernameValue = userName.text!
+                userNameTextView.text = appMemory.string(forKey: Keys.Mqtt_UserName.rawValue)
+                userNameValue = userNameTextView.text!
             }
             if(appMemory.string(forKey: Keys.Mqtt_Password.rawValue) != nil){
-                password.text = appMemory.string(forKey: Keys.Mqtt_Password.rawValue)!
-                passwordvalue = password.text!
+                passwordTextView.text = appMemory.string(forKey: Keys.Mqtt_Password.rawValue)!
+                passwordvalue = passwordTextView.text!
             }
+        }else{
+            mqttSecureSwitch.setOn(false, animated: false)
         }
+   
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,58 +70,107 @@ class VerbindungVC: UIViewController {
     }
     
     @IBAction func mqttAnonymus(_ sender: UISwitch) {
-        hide_UserPass(sender.isOn)
+        _ = showUsernamePasswordTextView(sender.isOn)
 
     }
     
     @IBAction func verbindenAction(_ sender: UIButton) {
-        //Save All new Update to AppMemory
-        ipAddressValue = ipAddress.text!
-        port = Int32(portNummer.text!)!
-        appMemory.set(ipAddressValue, forKey: Keys.Mqtt_Ip_Address.rawValue)
-        appMemory.set(port, forKey: Keys.Mqtt_Port.rawValue)
-        appMemory.set(anonymous, forKey: Keys.Mqtt_Anonymous.rawValue)
-        if(!anonymous){
-        usernameValue = userName.text!
-        passwordvalue = password.text!
-        appMemory.set(passwordvalue, forKey: Keys.Mqtt_Password.rawValue)
-        appMemory.set(usernameValue, forKey: Keys.Mqtt_UserName.rawValue)
+        
+       var validTextViewsValues:Bool = true
+        
+        if(ipAddressTextView.text?.isEmpty)!{
+            Alert.show(title: "Ip Address Fehler", message: "Bitte geben Sie die Mqtt Server Ip Address", vc: self)
+            validTextViewsValues = false
+        }else{
+            ipAddressValue = ipAddressTextView.text!
         }
-        var config = MQTTConfig.init(clientId: "Ipad", host: ipAddressValue, port: Int32(port), keepAlive: 20)
-        config.onConnectCallback = {ReturnCode in NSLog("Return Code is \(ReturnCode.description)")}
-        config.onMessageCallback = {mosquitto_message in NSLog("MQTT Message recieved : payload=\(mqttMessage.payloadString)")}
         
-        var client = MQTT.newConnection(config)
-        testUD()
+        if(portNummerTextView.text?.isEmpty)!{
+            Alert.show(title: "Port Nummer Fehler", message: "Bitte geben Sie ein Port Nummer von MQTT Server", vc: self)
+            validTextViewsValues = false
+        }else{
+            if let validatePort = Int(portNummerTextView.text!){
+                self.port = validatePort
+            }else{
+                Alert.show(title: "Port Eingabe Fehler", message: "Port können nur nummer sein.", vc: self)
+            }
+        }
+        
+        if(isMqttAccessSecure){
+            if(userNameTextView.text?.isEmpty)!{
+                Alert.show(title: "Der Benutzername leer", message: "Bitte geben Sie der Benutzername", vc: self)
+                validTextViewsValues = false
+            }else{
+                self.userNameValue = userNameTextView.text!
+            }
+            
+            if(passwordTextView.text?.isEmpty)!{
+                Alert.show(title: "Der Kennwort leer", message: "Bitte geben Sie der Kennwort", vc: self)
+                validTextViewsValues = false
+            }else{
+                self.passwordvalue = passwordTextView.text!
+            }
+        }
+        
+        if(validTextViewsValues){
+            appMemory.set(ipAddressValue, forKey: Keys.Mqtt_Ip_Address.rawValue)
+            appMemory.set(port, forKey: Keys.Mqtt_Port.rawValue)
+            if(isMqttAccessSecure){
+                appMemory.set(userNameValue, forKey: Keys.Mqtt_UserName.rawValue)
+                appMemory.set(passwordvalue, forKey: Keys.Mqtt_Password.rawValue)
+            }
+            appMemory.set(isMqttAccessSecure, forKey: Keys.Mqtt_Anonymous.rawValue)
+            mqttConnect(host: ipAddressValue, port: UInt16(port), clientID: "iOSDev", username: userNameValue, password: passwordvalue, cleanSession: true, keepAlive: 15)
+        }
+        
+    }
+    
+    private func mqttConnect(host:String, port:UInt16,clientID:String,username:String , password:String,cleanSession:Bool,keepAlive:UInt16,useSSL:Bool=false){
+        
 
-    }
-    
-    
-    func testUD(){
-        print("The saved IP Address is : ")
-        print(appMemory.string(forKey: Keys.Mqtt_Ip_Address.rawValue) as Any)
-        print("The saved port is : ")
-        print(appMemory.value(forKey: Keys.Mqtt_Port.rawValue) as Any)
-        print("The saved anonymous state is : ")
-        print(appMemory.bool(forKey: Keys.Mqtt_Anonymous.rawValue))
-        print("The saved username is : ")
-        print(appMemory.string(forKey: Keys.Mqtt_UserName.rawValue) as Any)
-        print("The saved Mqtt password is : ")
-        print(appMemory.string(forKey:Keys.Mqtt_Password.rawValue) as Any)
+        mqttClient = MQTTSession.init(host:host, port: port, clientID: clientID, cleanSession: cleanSession, keepAlive: keepAlive, useSSL: useSSL);
+        
+        mqttClient!.connect{(succeeded, error) -> Void in
+            if (succeeded){
+               self.showConnectionStatus(connectionStatus: true)
+            }else{
+               self.showConnectionStatus(connectionStatus: false)
+            }
+            
+      }
         
     }
     
     
-    func hide_UserPass(_ state:Bool) -> Bool{
+     private func showConnectionStatus(connectionStatus:Bool){
+        let title:String = "Verbindung Status"
+        var message:String = "Error Connection Status is Unknown"
+        
+        if(connectionStatus ){
+            message = "Erfolgreiche Verbindung"
+            statusLight.image = #imageLiteral(resourceName: "GreenLight")
+        }else{
+            message = "Nicht erfolgreiche Verbindung"
+            statusLight.image = #imageLiteral(resourceName: "RedLight")
+        }
+        Alert.show(title: title, message: message, vc: self)
+    }
+    
+    
+    private func showUsernamePasswordTextView(_ state:Bool) -> Bool{
         if(state){
-            userName.isHidden = true
-            password.isHidden = true
-            anonymous = true
+            userNameTextView.isHidden = false
+            passwordTextView.isHidden = false
+            userNameLabel.isHidden = false
+            passwordlabel.isHidden = false
+            isMqttAccessSecure = true
             return true
         }else{
-            userName.isHidden = false
-            password.isHidden = false
-            anonymous = false
+            userNameTextView.isHidden = true
+            passwordTextView.isHidden = true
+            userNameLabel.isHidden = true
+            passwordlabel.isHidden = true
+            isMqttAccessSecure = false
             return false
         }
     }
@@ -136,5 +187,9 @@ class VerbindungVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }
+    
+    
+   

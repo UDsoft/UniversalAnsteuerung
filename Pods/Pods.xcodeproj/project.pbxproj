@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00ABB17A65797D5EB09DBE177745F860 /* Pods-UniversalAnsteuerung-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFE2B7AB0F9BDCD8635CA79D53C8DD /* Pods-UniversalAnsteuerung-dummy.m */; };
+		05C101613C4B62FD17F65CF2498D1BC9 /* MQTTPingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */; };
+		0E033458D6B2ADD8BB35748A9E269C42 /* Pods-UniversalAnsteuerungTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE574FBD366E6939AB97351472BF527 /* Pods-UniversalAnsteuerungTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12845F0FF41980B1FADEDD6A7D7CCAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		23B973F5F668B4006BEFBC6BFDD2F368 /* MQTTUnsubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */; };
+		37D7769594319DEE40EFB24EF2BFAF54 /* MQTTUnSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */; };
+		3C2424C633A6837AE7D8EBF64C211EF7 /* SwiftMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46D80E2521020C8F886FE44B2D12020D /* MQTTConnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */; };
+		5A87B65C82220D4AFA01F07EED3AD7EA /* Pods-UniversalAnsteuerung-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C47246C0C9B2AA467A441EBEA1D7226D /* Pods-UniversalAnsteuerung-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63464E49452175D13279AFEF70CBEB1D /* MQTTPublishPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */; };
+		63693C36E45BA3334CC9D9083BE70964 /* Pods-UniversalAnsteuerungUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6397CCEFE37289506418AAB56827089 /* Pods-UniversalAnsteuerungUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E471B54EE72BFF8B91181F4F1A761D0 /* MQTTPingPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */; };
+		71E02BE8C9A195DF141F7FEE927601F4 /* MQTTPubMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */; };
+		789C6B79182D450A848E9C5039EEE89E /* MQTTConnAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */; };
+		8051EEFB89AAE3CF2AE5AE0351581DDB /* MQTTSessionStreamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */; };
+		831842418D4F7199DB655020181BDDEF /* MQTTDisconnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */; };
+		8363ED824CA1498A2DC88A21D1EB417B /* MQTTPubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */; };
+		85288431B8E0A2AC3C0A74D7D460D82E /* Pods-UniversalAnsteuerungUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B815F2810F4BE7C830216DC4423586F /* Pods-UniversalAnsteuerungUITests-dummy.m */; };
+		87900CA595920ECEEFEC0AE7BFAC9DBB /* MQTTPacketFixedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */; };
+		8BD3F01707889E378E11F4CBD4D1A562 /* MQTTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */; };
+		92F3A61BDE5376C8C31658D094EC93EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B69B58F4B83A4DE3629E0B66CDAEB032 /* MQTTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */; };
+		C0A2494B4EB578812EF6F593B5E6BA16 /* MQTTSubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */; };
+		D73EEEE77AE5FDEF74B5B6B34C431714 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D7D4B7FF3F483C438503B8A261AFD583 /* Pods-UniversalAnsteuerungTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BABA75963EC60AB6EDB8745175B51218 /* Pods-UniversalAnsteuerungTests-dummy.m */; };
+		DBBDE873789DD86BA463E6C9F2D5CD77 /* SwiftMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */; };
+		ED625E367874FE91571B59DA00AF957F /* MQTTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */; };
+		F49206521566317D16CBE252AE11569A /* MQTTSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */; };
+		F8709CCB14CBC5199427431EA137B9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7F37AECC1D543E5D66C1459FD10B1F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91794A4EACE5102D783F768B3F8B522B;
+			remoteInfo = SwiftMQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02306F92FF877443A7C8935ED3E96C69 /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMQTT.framework; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacketFixedHeader.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacketFixedHeader.swift; sourceTree = "<group>"; };
+		0CA4A72F251B0E8709EF77D31F7F542E /* Pods-UniversalAnsteuerungUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerungUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-umbrella.h"; sourceTree = "<group>"; };
+		0D1315D2288AEB05F239637120F9BC0C /* Pods-UniversalAnsteuerungTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerungTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F4D299544E5FEF976433978092E17D1 /* Pods-UniversalAnsteuerung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerung.debug.xcconfig"; sourceTree = "<group>"; };
+		1570BB94EB10F47642A54C2F615E14B2 /* Pods-UniversalAnsteuerungUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UniversalAnsteuerungUITests.modulemap"; sourceTree = "<group>"; };
+		19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubAck.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubAck.swift; sourceTree = "<group>"; };
+		1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnsubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnsubPacket.swift; sourceTree = "<group>"; };
+		1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSession.swift; path = SwiftMQTT/SwiftMQTT/MQTTSession.swift; sourceTree = "<group>"; };
+		2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnSubAckPacket.swift; sourceTree = "<group>"; };
+		22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnectPacket.swift; sourceTree = "<group>"; };
+		2991577D4431F68C33235F5549691209 /* SwiftMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-prefix.pch"; sourceTree = "<group>"; };
+		2E027E2D70B8317199E6B48FD538419A /* Pods_UniversalAnsteuerung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UniversalAnsteuerung.framework; path = "Pods-UniversalAnsteuerung.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3569A9045D4D2DE2488AEC139DCEE255 /* Pods-UniversalAnsteuerungTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerungTests-frameworks.sh"; sourceTree = "<group>"; };
+		35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingPacket.swift; sourceTree = "<group>"; };
+		369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSessionStreamDelegate.swift; path = SwiftMQTT/SwiftMQTT/MQTTSessionStreamDelegate.swift; sourceTree = "<group>"; };
+		38CFE2B7AB0F9BDCD8635CA79D53C8DD /* Pods-UniversalAnsteuerung-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UniversalAnsteuerung-dummy.m"; sourceTree = "<group>"; };
+		3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubPacket.swift; sourceTree = "<group>"; };
+		46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMQTT.xcconfig; sourceTree = "<group>"; };
+		4A83B58FDD5B5B017D861DF3112EA72B /* Pods-UniversalAnsteuerung-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerung-resources.sh"; sourceTree = "<group>"; };
+		4F4EF1FF670C93EA12C6DCA994E3DEC5 /* Pods-UniversalAnsteuerungTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerungTests.release.xcconfig"; sourceTree = "<group>"; };
+		522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMQTT-dummy.m"; sourceTree = "<group>"; };
+		5B815F2810F4BE7C830216DC4423586F /* Pods-UniversalAnsteuerungUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UniversalAnsteuerungUITests-dummy.m"; sourceTree = "<group>"; };
+		5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubMsg.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubMsg.swift; sourceTree = "<group>"; };
+		5EA19F7F27A9A0845E56E60C6595D8D1 /* Pods-UniversalAnsteuerungUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerungUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingResp.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingResp.swift; sourceTree = "<group>"; };
+		6D74EA981C2428A3649A91DDD1271505 /* Pods-UniversalAnsteuerungUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UniversalAnsteuerungUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F24C69036C413FC8F193E3B3208B11B /* Pods-UniversalAnsteuerung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerung.release.xcconfig"; sourceTree = "<group>"; };
+		6F51642C8D6D9F546279343F594921D8 /* Pods-UniversalAnsteuerung-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerung-frameworks.sh"; sourceTree = "<group>"; };
+		6FFF95D99ABCFF8A513AB678C1982934 /* Pods_UniversalAnsteuerungTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UniversalAnsteuerungTests.framework; path = "Pods-UniversalAnsteuerungTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A1232AB95688C5400AECB70A6D5EAC /* Pods-UniversalAnsteuerungTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerungTests-resources.sh"; sourceTree = "<group>"; };
+		7DE574FBD366E6939AB97351472BF527 /* Pods-UniversalAnsteuerungTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UniversalAnsteuerungTests-umbrella.h"; sourceTree = "<group>"; };
+		82BDDA6D02C6F36A157C4BF24F1F9422 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87944E2B8D6078D1E39FE851C52C4B9E /* Pods-UniversalAnsteuerungTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UniversalAnsteuerungTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99781341B968341F63DE9806BB0E17D0 /* Pods-UniversalAnsteuerungUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UniversalAnsteuerungUITests-resources.sh"; sourceTree = "<group>"; };
+		9EDEEC2328FB3B85C759675369C46E32 /* Pods-UniversalAnsteuerung.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UniversalAnsteuerung.modulemap"; sourceTree = "<group>"; };
+		A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnAckPacket.swift; sourceTree = "<group>"; };
+		A4ECD8597640344A92D3A78436256504 /* Pods-UniversalAnsteuerung-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UniversalAnsteuerung-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5215E8A892098CC83331F5716FFACB5 /* Pods-UniversalAnsteuerungTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UniversalAnsteuerungTests.modulemap"; sourceTree = "<group>"; };
+		A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
+		A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubAckPacket.swift; sourceTree = "<group>"; };
+		AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPublishPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPublishPacket.swift; sourceTree = "<group>"; };
+		BABA75963EC60AB6EDB8745175B51218 /* Pods-UniversalAnsteuerungTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UniversalAnsteuerungTests-dummy.m"; sourceTree = "<group>"; };
+		C47246C0C9B2AA467A441EBEA1D7226D /* Pods-UniversalAnsteuerung-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UniversalAnsteuerung-umbrella.h"; sourceTree = "<group>"; };
+		C5FF2567F10842A8CEF4D6C8033EDBBC /* Pods-UniversalAnsteuerungUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UniversalAnsteuerungUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0D1D4160069D17FEA2E3ECFBBB00BEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacket.swift; sourceTree = "<group>"; };
+		DE8BC7D3122684AE1144D2B43823BA02 /* Pods-UniversalAnsteuerungTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UniversalAnsteuerungTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E49AEC8968AB90EE621940297AABD513 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6397CCEFE37289506418AAB56827089 /* Pods-UniversalAnsteuerungUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UniversalAnsteuerungUITests-umbrella.h"; sourceTree = "<group>"; };
+		ECC383E7DFF7E5FC4BB6D9FE11D59F51 /* Pods-UniversalAnsteuerungUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UniversalAnsteuerungUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED3B70EC7CF96BA25C6DE26614EA6FAA /* Pods-UniversalAnsteuerung-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UniversalAnsteuerung-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EEC7B73766DAE7F75B9932C64C1A41AC /* Pods_UniversalAnsteuerungUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UniversalAnsteuerungUITests.framework; path = "Pods-UniversalAnsteuerungUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F388C04B8BE7DE91F0FE420925A1EB67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTExtensions.swift; path = SwiftMQTT/SwiftMQTT/MQTTExtensions.swift; sourceTree = "<group>"; };
+		FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTDisconnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTDisconnectPacket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19AFB686FDC6FC2B80F2FC8B486DB958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8709CCB14CBC5199427431EA137B9D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9275B2AA27B7E2C33BD73436C410B2D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12845F0FF41980B1FADEDD6A7D7CCAF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E9F75DDCAF7B9A5E508EEF7322CFBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73EEEE77AE5FDEF74B5B6B34C431714 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F3177A8BE237282E5BFC7AB5158482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F3A61BDE5376C8C31658D094EC93EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		155D4E5E0752B8EDA478752EFF1BCCD7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF46E8996CED31624C3DD758419FC7C8 /* Pods-UniversalAnsteuerung */,
+				ABF83590B51E6BA1D6941E44892A9194 /* Pods-UniversalAnsteuerungTests */,
+				212A18C2C31E2D9F6C0503BC0E06CE54 /* Pods-UniversalAnsteuerungUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		212A18C2C31E2D9F6C0503BC0E06CE54 /* Pods-UniversalAnsteuerungUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82BDDA6D02C6F36A157C4BF24F1F9422 /* Info.plist */,
+				1570BB94EB10F47642A54C2F615E14B2 /* Pods-UniversalAnsteuerungUITests.modulemap */,
+				6D74EA981C2428A3649A91DDD1271505 /* Pods-UniversalAnsteuerungUITests-acknowledgements.markdown */,
+				C5FF2567F10842A8CEF4D6C8033EDBBC /* Pods-UniversalAnsteuerungUITests-acknowledgements.plist */,
+				5B815F2810F4BE7C830216DC4423586F /* Pods-UniversalAnsteuerungUITests-dummy.m */,
+				0CA4A72F251B0E8709EF77D31F7F542E /* Pods-UniversalAnsteuerungUITests-frameworks.sh */,
+				99781341B968341F63DE9806BB0E17D0 /* Pods-UniversalAnsteuerungUITests-resources.sh */,
+				E6397CCEFE37289506418AAB56827089 /* Pods-UniversalAnsteuerungUITests-umbrella.h */,
+				ECC383E7DFF7E5FC4BB6D9FE11D59F51 /* Pods-UniversalAnsteuerungUITests.debug.xcconfig */,
+				5EA19F7F27A9A0845E56E60C6595D8D1 /* Pods-UniversalAnsteuerungUITests.release.xcconfig */,
+			);
+			name = "Pods-UniversalAnsteuerungUITests";
+			path = "Target Support Files/Pods-UniversalAnsteuerungUITests";
+			sourceTree = "<group>";
+		};
+		307465E3BE5ECCE68808C0EE97398277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E027E2D70B8317199E6B48FD538419A /* Pods_UniversalAnsteuerung.framework */,
+				6FFF95D99ABCFF8A513AB678C1982934 /* Pods_UniversalAnsteuerungTests.framework */,
+				EEC7B73766DAE7F75B9932C64C1A41AC /* Pods_UniversalAnsteuerungUITests.framework */,
+				02306F92FF877443A7C8935ED3E96C69 /* SwiftMQTT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A2B311964DF9EB2C5F0548C7ED9341D /* SwiftMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				A444AB1E357F75E2AE785E93D8D64248 /* MQTTConnAckPacket.swift */,
+				22C9FB69CE650A08381B949F900A1648 /* MQTTConnectPacket.swift */,
+				FF1F8E0FFBCF95B27E3A70C2D1AF451C /* MQTTDisconnectPacket.swift */,
+				FB4E91D563732A37E64A68146DECDB7C /* MQTTExtensions.swift */,
+				D25082262FB21CA630A6F174FBC0AC09 /* MQTTPacket.swift */,
+				06DB0E2B1C59508D1E4BD30976B5670B /* MQTTPacketFixedHeader.swift */,
+				35F29A28CA3218A27EF2D0BF938D8D6D /* MQTTPingPacket.swift */,
+				6D0A420219E6BDBCF9682F731E00A9D3 /* MQTTPingResp.swift */,
+				19FB3EBEBD8312F065F7298F5C50E930 /* MQTTPubAck.swift */,
+				AC73D00C53F0226BE9531AB089C94600 /* MQTTPublishPacket.swift */,
+				5DFE6519C0631CC1D3D9B15215C8A5DB /* MQTTPubMsg.swift */,
+				1E40F4A946AB416DB7AFAD87BA18833F /* MQTTSession.swift */,
+				369502204615933DE451E8204E90A53D /* MQTTSessionStreamDelegate.swift */,
+				A59D516DBF702F3A2DCF0B5A18AC0D94 /* MQTTSubAckPacket.swift */,
+				3EF8E897CD8625EF2A2F4C862607CC63 /* MQTTSubPacket.swift */,
+				2244A098D345E370F879DD2ED8BF0554 /* MQTTUnSubAckPacket.swift */,
+				1C95045370DA8B9B3C6620FC436C3DF9 /* MQTTUnsubPacket.swift */,
+				4C9F63ABDF924B3B4C270C7F1E99EEB8 /* Support Files */,
+			);
+			name = SwiftMQTT;
+			path = SwiftMQTT;
+			sourceTree = "<group>";
+		};
+		4A51E08E2902F3A860D24AC5A22AFED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B311964DF9EB2C5F0548C7ED9341D /* SwiftMQTT */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C9F63ABDF924B3B4C270C7F1E99EEB8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1D4160069D17FEA2E3ECFBBB00BEC /* Info.plist */,
+				A54EFB6997849F3D9492F076202A2748 /* SwiftMQTT.modulemap */,
+				46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */,
+				522E743E697A8FFB32B3CE6CB538D3BB /* SwiftMQTT-dummy.m */,
+				2991577D4431F68C33235F5549691209 /* SwiftMQTT-prefix.pch */,
+				0CE41FEDB6F391329340987BA17FC683 /* SwiftMQTT-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMQTT";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4A51E08E2902F3A860D24AC5A22AFED9 /* Pods */,
+				307465E3BE5ECCE68808C0EE97398277 /* Products */,
+				155D4E5E0752B8EDA478752EFF1BCCD7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF83590B51E6BA1D6941E44892A9194 /* Pods-UniversalAnsteuerungTests */ = {
+			isa = PBXGroup;
+			children = (
+				E49AEC8968AB90EE621940297AABD513 /* Info.plist */,
+				A5215E8A892098CC83331F5716FFACB5 /* Pods-UniversalAnsteuerungTests.modulemap */,
+				87944E2B8D6078D1E39FE851C52C4B9E /* Pods-UniversalAnsteuerungTests-acknowledgements.markdown */,
+				DE8BC7D3122684AE1144D2B43823BA02 /* Pods-UniversalAnsteuerungTests-acknowledgements.plist */,
+				BABA75963EC60AB6EDB8745175B51218 /* Pods-UniversalAnsteuerungTests-dummy.m */,
+				3569A9045D4D2DE2488AEC139DCEE255 /* Pods-UniversalAnsteuerungTests-frameworks.sh */,
+				75A1232AB95688C5400AECB70A6D5EAC /* Pods-UniversalAnsteuerungTests-resources.sh */,
+				7DE574FBD366E6939AB97351472BF527 /* Pods-UniversalAnsteuerungTests-umbrella.h */,
+				0D1315D2288AEB05F239637120F9BC0C /* Pods-UniversalAnsteuerungTests.debug.xcconfig */,
+				4F4EF1FF670C93EA12C6DCA994E3DEC5 /* Pods-UniversalAnsteuerungTests.release.xcconfig */,
+			);
+			name = "Pods-UniversalAnsteuerungTests";
+			path = "Target Support Files/Pods-UniversalAnsteuerungTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF46E8996CED31624C3DD758419FC7C8 /* Pods-UniversalAnsteuerung */ = {
+			isa = PBXGroup;
+			children = (
+				F388C04B8BE7DE91F0FE420925A1EB67 /* Info.plist */,
+				9EDEEC2328FB3B85C759675369C46E32 /* Pods-UniversalAnsteuerung.modulemap */,
+				ED3B70EC7CF96BA25C6DE26614EA6FAA /* Pods-UniversalAnsteuerung-acknowledgements.markdown */,
+				A4ECD8597640344A92D3A78436256504 /* Pods-UniversalAnsteuerung-acknowledgements.plist */,
+				38CFE2B7AB0F9BDCD8635CA79D53C8DD /* Pods-UniversalAnsteuerung-dummy.m */,
+				6F51642C8D6D9F546279343F594921D8 /* Pods-UniversalAnsteuerung-frameworks.sh */,
+				4A83B58FDD5B5B017D861DF3112EA72B /* Pods-UniversalAnsteuerung-resources.sh */,
+				C47246C0C9B2AA467A441EBEA1D7226D /* Pods-UniversalAnsteuerung-umbrella.h */,
+				0F4D299544E5FEF976433978092E17D1 /* Pods-UniversalAnsteuerung.debug.xcconfig */,
+				6F24C69036C413FC8F193E3B3208B11B /* Pods-UniversalAnsteuerung.release.xcconfig */,
+			);
+			name = "Pods-UniversalAnsteuerung";
+			path = "Target Support Files/Pods-UniversalAnsteuerung";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EAF4B06D0F8902C109EA6640EAD467A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2424C633A6837AE7D8EBF64C211EF7 /* SwiftMQTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340ED99982605557F49A4B52EE6CC2C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A87B65C82220D4AFA01F07EED3AD7EA /* Pods-UniversalAnsteuerung-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6909ADF76F9394C378F1B3B2A32E736D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63693C36E45BA3334CC9D9083BE70964 /* Pods-UniversalAnsteuerungUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAAF36C76EEDC87FDB7BE732CFDB5E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E033458D6B2ADD8BB35748A9E269C42 /* Pods-UniversalAnsteuerungTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D4DDCF383E2669C24E54678A5BC023F /* Pods-UniversalAnsteuerungTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B6F8727A7E64222BC598B16ACB578E /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerungTests" */;
+			buildPhases = (
+				312CDC64EDC60CDD5BA5E9432E73C2C9 /* Sources */,
+				C3F3177A8BE237282E5BFC7AB5158482 /* Frameworks */,
+				ADAAF36C76EEDC87FDB7BE732CFDB5E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UniversalAnsteuerungTests";
+			productName = "Pods-UniversalAnsteuerungTests";
+			productReference = 6FFF95D99ABCFF8A513AB678C1982934 /* Pods_UniversalAnsteuerungTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F67CC4C419E3EC66068B4A5323F527C /* Pods-UniversalAnsteuerung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526ADBA3A5876CB77D4B1175DC18A62E /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerung" */;
+			buildPhases = (
+				E262355A90CE4B70ACE8FC1538798D3A /* Sources */,
+				93E9F75DDCAF7B9A5E508EEF7322CFBD /* Frameworks */,
+				340ED99982605557F49A4B52EE6CC2C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AB1D7221679AF274C2539E3C27291C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-UniversalAnsteuerung";
+			productName = "Pods-UniversalAnsteuerung";
+			productReference = 2E027E2D70B8317199E6B48FD538419A /* Pods_UniversalAnsteuerung.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91794A4EACE5102D783F768B3F8B522B /* SwiftMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C281A6EAA15FD5B2FB11CD39C754115 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */;
+			buildPhases = (
+				BD6EA47A6F6B53DB139F552442003FDC /* Sources */,
+				19AFB686FDC6FC2B80F2FC8B486DB958 /* Frameworks */,
+				1EAF4B06D0F8902C109EA6640EAD467A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMQTT;
+			productName = SwiftMQTT;
+			productReference = 02306F92FF877443A7C8935ED3E96C69 /* SwiftMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		932FFD54F65115E6C60DD95DB29C3A19 /* Pods-UniversalAnsteuerungUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28B15D287F0DEC93941F46775856409 /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerungUITests" */;
+			buildPhases = (
+				E668F566F20DC25B479AA7A051582946 /* Sources */,
+				9275B2AA27B7E2C33BD73436C410B2D5 /* Frameworks */,
+				6909ADF76F9394C378F1B3B2A32E736D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UniversalAnsteuerungUITests";
+			productName = "Pods-UniversalAnsteuerungUITests";
+			productReference = EEC7B73766DAE7F75B9932C64C1A41AC /* Pods_UniversalAnsteuerungUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 307465E3BE5ECCE68808C0EE97398277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F67CC4C419E3EC66068B4A5323F527C /* Pods-UniversalAnsteuerung */,
+				5D4DDCF383E2669C24E54678A5BC023F /* Pods-UniversalAnsteuerungTests */,
+				932FFD54F65115E6C60DD95DB29C3A19 /* Pods-UniversalAnsteuerungUITests */,
+				91794A4EACE5102D783F768B3F8B522B /* SwiftMQTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		312CDC64EDC60CDD5BA5E9432E73C2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D4B7FF3F483C438503B8A261AFD583 /* Pods-UniversalAnsteuerungTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6EA47A6F6B53DB139F552442003FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789C6B79182D450A848E9C5039EEE89E /* MQTTConnAckPacket.swift in Sources */,
+				46D80E2521020C8F886FE44B2D12020D /* MQTTConnectPacket.swift in Sources */,
+				831842418D4F7199DB655020181BDDEF /* MQTTDisconnectPacket.swift in Sources */,
+				8BD3F01707889E378E11F4CBD4D1A562 /* MQTTExtensions.swift in Sources */,
+				B69B58F4B83A4DE3629E0B66CDAEB032 /* MQTTPacket.swift in Sources */,
+				87900CA595920ECEEFEC0AE7BFAC9DBB /* MQTTPacketFixedHeader.swift in Sources */,
+				6E471B54EE72BFF8B91181F4F1A761D0 /* MQTTPingPacket.swift in Sources */,
+				05C101613C4B62FD17F65CF2498D1BC9 /* MQTTPingResp.swift in Sources */,
+				8363ED824CA1498A2DC88A21D1EB417B /* MQTTPubAck.swift in Sources */,
+				63464E49452175D13279AFEF70CBEB1D /* MQTTPublishPacket.swift in Sources */,
+				71E02BE8C9A195DF141F7FEE927601F4 /* MQTTPubMsg.swift in Sources */,
+				ED625E367874FE91571B59DA00AF957F /* MQTTSession.swift in Sources */,
+				8051EEFB89AAE3CF2AE5AE0351581DDB /* MQTTSessionStreamDelegate.swift in Sources */,
+				F49206521566317D16CBE252AE11569A /* MQTTSubAckPacket.swift in Sources */,
+				C0A2494B4EB578812EF6F593B5E6BA16 /* MQTTSubPacket.swift in Sources */,
+				37D7769594319DEE40EFB24EF2BFAF54 /* MQTTUnSubAckPacket.swift in Sources */,
+				23B973F5F668B4006BEFBC6BFDD2F368 /* MQTTUnsubPacket.swift in Sources */,
+				DBBDE873789DD86BA463E6C9F2D5CD77 /* SwiftMQTT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E262355A90CE4B70ACE8FC1538798D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ABB17A65797D5EB09DBE177745F860 /* Pods-UniversalAnsteuerung-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E668F566F20DC25B479AA7A051582946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85288431B8E0A2AC3C0A74D7D460D82E /* Pods-UniversalAnsteuerungUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AB1D7221679AF274C2539E3C27291C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMQTT;
+			target = 91794A4EACE5102D783F768B3F8B522B /* SwiftMQTT */;
+			targetProxy = D7F37AECC1D543E5D66C1459FD10B1F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D0FA15064D8CE5F221AC4C2BB869765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA19F7F27A9A0845E56E60C6595D8D1 /* Pods-UniversalAnsteuerungUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerungUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerungUITests/Pods-UniversalAnsteuerungUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerungUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B119B92817DDCBE4191099BE99E5BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4D299544E5FEF976433978092E17D1 /* Pods-UniversalAnsteuerung.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerung/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerung/Pods-UniversalAnsteuerung.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerung;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		73BCC29E0686A96971E0167C0D77C906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81B28A3E395A55296D729D385489A3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1B62B828605CED1D221C8EDB933F1 /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94CE4F813BF476F09C45C674FFE1B5CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F24C69036C413FC8F193E3B3208B11B /* Pods-UniversalAnsteuerung.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerung/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerung/Pods-UniversalAnsteuerung.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerung;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC2C5258D4455C6FA4C45F6D5D6937B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4EF1FF670C93EA12C6DCA994E3DEC5 /* Pods-UniversalAnsteuerungTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerungTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerungTests/Pods-UniversalAnsteuerungTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerungTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4A916A7B56C954118F5742FF2CEDAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1315D2288AEB05F239637120F9BC0C /* Pods-UniversalAnsteuerungTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerungTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerungTests/Pods-UniversalAnsteuerungTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerungTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE3F567036D6B8879EB7016AF98886D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC383E7DFF7E5FC4BB6D9FE11D59F51 /* Pods-UniversalAnsteuerungUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-UniversalAnsteuerungUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UniversalAnsteuerungUITests/Pods-UniversalAnsteuerungUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UniversalAnsteuerungUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C281A6EAA15FD5B2FB11CD39C754115 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B28A3E395A55296D729D385489A3F8 /* Debug */,
+				73BCC29E0686A96971E0167C0D77C906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526ADBA3A5876CB77D4B1175DC18A62E /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B119B92817DDCBE4191099BE99E5BA0 /* Debug */,
+				94CE4F813BF476F09C45C674FFE1B5CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B6F8727A7E64222BC598B16ACB578E /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerungTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A916A7B56C954118F5742FF2CEDAC0 /* Debug */,
+				AC2C5258D4455C6FA4C45F6D5D6937B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28B15D287F0DEC93941F46775856409 /* Build configuration list for PBXNativeTarget "Pods-UniversalAnsteuerungUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE3F567036D6B8879EB7016AF98886D /* Debug */,
+				0D0FA15064D8CE5F221AC4C2BB869765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
