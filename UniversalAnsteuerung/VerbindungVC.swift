@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CocoaMQTT
+import SwiftMQTT
 
 class VerbindungVC: UIViewController{
     
@@ -29,10 +29,8 @@ class VerbindungVC: UIViewController{
     var userNameValue:String = ""
     var passwordvalue:String = ""
     var isMqttAccessSecure:Bool = true
-    var mqttClient:CocoaMQTT?
-    
-    
-/*********************************************************************/
+    var mqttClient:MQTTSession?
+    /*********************************************************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,7 +108,7 @@ class VerbindungVC: UIViewController{
                 Alert.show(title: "Der Kennwort leer", message: "Bitte geben Sie der Kennwort", vc: self)
                 validTextViewsValues = false
             }else{
-                self.passwordvalue = userNameTextView.text!
+                self.passwordvalue = passwordTextView.text!
             }
         }
         
@@ -122,32 +120,25 @@ class VerbindungVC: UIViewController{
                 appMemory.set(passwordvalue, forKey: Keys.Mqtt_Password.rawValue)
             }
             appMemory.set(isMqttAccessSecure, forKey: Keys.Mqtt_Anonymous.rawValue)
-            let connectionStatus = mqttConnect(secure: isMqttAccessSecure)
-            print(connectionStatus)
-            showConnectionStatus(connectionStatus: connectionStatus)
+            mqttConnect(host: ipAddressValue, port: UInt16(port), clientID: "iOSDev", username: userNameValue, password: passwordvalue, cleanSession: true, keepAlive: 15)
         }
         
     }
     
-    private func mqttConnect(secure:Bool)-> Bool{
-        mqttSetup(secure: secure)
-        let connectionStatus = mqttClient?.connect()
-        return connectionStatus!
+    private func mqttConnect(host:String, port:UInt16,clientID:String,username:String , password:String,cleanSession:Bool,keepAlive:UInt16,useSSL:Bool=false){
+        
+
+        mqttClient = MQTTSession.init(host:host, port: port, clientID: clientID, cleanSession: cleanSession, keepAlive: keepAlive, useSSL: useSSL);
+        mqttClient!.connect{(succeeded, error) -> Void in
+            if succeeded{
+               self.showConnectionStatus(connectionStatus: true)
+            }else{
+               self.showConnectionStatus(connectionStatus: false)
+            }
+      }
+        
     }
     
-    private func mqttSetup(secure:Bool){
-        let clientID = "IPAD " + "Dev"
-        mqttClient = CocoaMQTT(clientID: clientID, host: ipAddressValue, port: UInt16(port))
-        
-        mqttClient?.willMessage = CocoaMQTTWill(topic: "will", message:"IPAD DEV Offline")
-        mqttClient?.keepAlive = 90
-        mqttClient?.delegate = self
-        
-        if(secure){
-            mqttClient?.username = userNameValue
-            mqttClient?.password = passwordvalue
-        }
-    }
     
      private func showConnectionStatus(connectionStatus:Bool){
         let title:String = "Verbindung Status"
@@ -199,51 +190,4 @@ class VerbindungVC: UIViewController{
 }
     
     
-    extension VerbindungVC : CocoaMQTTDelegate{
-        
-        func mqtt(_ mqtt: CocoaMQTT, didConnect host: String, port: Int) {
-            consoleDisplayTest(info: "Connect Success to \(host):\(port)")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didPublishMessage message: CocoaMQTTMessage, id: UInt16) {
-            consoleDisplayTest(info: "Publish Message -> \(message.string) with id \(id)")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: UInt16) {
-            consoleDisplayTest(info: "didPublishAck with id: \(id)")
-        }
-        
-        func mqttDidReceivePong(_ mqtt: CocoaMQTT) {
-            consoleDisplayTest(info: "didRecievePong")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topic: String) {
-            consoleDisplayTest(info: "didSubcribeTopic to \(topic)")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didUnsubscribeTopic topic: String) {
-            consoleDisplayTest(info: "didUnsubscribeTopic to \(topic)")
-        }
-        
-        func mqttDidDisconnect(_ mqtt: CocoaMQTT, withError err: Error?) {
-            consoleDisplayTest(info: "didDisconnect with \(err.debugDescription)")
-        }
-        
-        func mqttDidPing(_ mqtt: CocoaMQTT) {
-            consoleDisplayTest(info: "didPing")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16) {
-            consoleDisplayTest(info: "didReceiveMessage with \(message.string)")
-        }
-        
-        func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
-            consoleDisplayTest(info: "didConnectAck with ack of \(ack.rawValue)")
-        }
-        
-        func consoleDisplayTest (info:String){
-            print("Delegate : \(info)")
-        }
-    }
-
-
+   

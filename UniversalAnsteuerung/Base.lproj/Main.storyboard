@@ -234,285 +234,397 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Raspi" translatesAutoresizingMaskIntoConstraints="NO" id="T4c-tY-8C9">
                                 <rect key="frame" x="304" y="68" width="416" height="632"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZb-ya-IGM">
+                            <button opaque="NO" alpha="0.5" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZb-ya-IGM">
                                 <rect key="frame" x="687" y="182" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6zG-Ki-MoQ"/>
                                     <constraint firstAttribute="width" constant="140" id="F7X-L5-hdy"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="BgJ-Rn-Psg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-k9-Im7">
+                            <button opaque="NO" alpha="0.5" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-k9-Im7">
                                 <rect key="frame" x="687" y="211" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="oqm-6N-r72"/>
                                     <constraint firstAttribute="width" constant="140" id="yI9-kG-7qP"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cPr-gB-XeT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-YL-R2y">
+                            <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-YL-R2y">
                                 <rect key="frame" x="687" y="240" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HLS-Db-Vho"/>
                                     <constraint firstAttribute="width" constant="140" id="J3g-6E-9wE"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="xeh-D6-JzZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-3c-mwq">
+                            <button opaque="NO" alpha="0.5" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-3c-mwq">
                                 <rect key="frame" x="687" y="300" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="X6H-HL-cdy"/>
                                     <constraint firstAttribute="height" constant="21" id="gmy-GS-YE3"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="dbS-aE-5KE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39n-KU-5VE">
+                            <button opaque="NO" alpha="0.5" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39n-KU-5VE">
                                 <rect key="frame" x="687" y="329" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NOg-df-lQa"/>
                                     <constraint firstAttribute="width" constant="140" id="bAH-ma-9P6"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3wP-9E-bMp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-WJ-UZW">
+                            <button opaque="NO" alpha="0.5" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-WJ-UZW">
                                 <rect key="frame" x="687" y="389" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="FaR-e5-fDf"/>
                                     <constraint firstAttribute="height" constant="21" id="vIZ-Ik-9tb"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LPK-P2-NsY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFH-4L-xRu">
+                            <button opaque="NO" alpha="0.5" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFH-4L-xRu">
                                 <rect key="frame" x="687" y="418" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7Gc-xx-Y6S"/>
                                     <constraint firstAttribute="width" constant="140" id="IyT-lm-oH5"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3tF-uM-GAU"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzu-DK-1PG">
+                            <button opaque="NO" alpha="0.5" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzu-DK-1PG">
                                 <rect key="frame" x="687" y="450" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="CYD-fp-s2y"/>
                                     <constraint firstAttribute="width" constant="140" id="gyV-dI-IA4"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ExO-hC-QfR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVU-vk-ju9">
+                            <button opaque="NO" alpha="0.5" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVU-vk-ju9">
                                 <rect key="frame" x="687" y="476" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="DPX-yf-us8"/>
                                     <constraint firstAttribute="height" constant="21" id="z7u-e0-mBh"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2R6-A5-bUD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYf-uf-okf">
+                            <button opaque="NO" alpha="0.5" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYf-uf-okf">
                                 <rect key="frame" x="687" y="536" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="IoB-28-Q0d"/>
                                     <constraint firstAttribute="width" constant="140" id="j0t-F9-N0S"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cbQ-kC-E7L"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-DB-93J">
+                            <button opaque="NO" alpha="0.5" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-DB-93J">
                                 <rect key="frame" x="687" y="595" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="DGf-QE-NgH"/>
                                     <constraint firstAttribute="height" constant="21" id="ozB-10-63W"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="McG-cz-MgK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idw-KL-4xx">
+                            <button opaque="NO" alpha="0.5" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idw-KL-4xx">
                                 <rect key="frame" x="687" y="627" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8HB-WW-b72"/>
                                     <constraint firstAttribute="width" constant="140" id="q1J-tT-9Xg"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="7bj-I9-k3d"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trk-qe-lVO">
+                            <button opaque="NO" alpha="0.5" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trk-qe-lVO">
                                 <rect key="frame" x="687" y="656" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="BDr-p2-eTq"/>
                                     <constraint firstAttribute="width" constant="140" id="dFm-US-RcV"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cNM-nB-bo0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKm-uB-6nl">
+                            <button opaque="NO" alpha="0.5" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKm-uB-6nl">
                                 <rect key="frame" x="198" y="627" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="9BR-Pa-gwU"/>
                                     <constraint firstAttribute="height" constant="21" id="cmE-Bm-0O1"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="j86-B0-a2j"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP2-Ae-NG6">
+                            <button opaque="NO" alpha="0.5" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP2-Ae-NG6">
                                 <rect key="frame" x="198" y="595" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1S9-il-bsg"/>
                                     <constraint firstAttribute="width" constant="140" id="2dd-Xj-qr7"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Q9v-zE-9b5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKE-yW-q4k">
+                            <button opaque="NO" alpha="0.5" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKE-yW-q4k">
                                 <rect key="frame" x="198" y="566" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ZkO-tI-JVh"/>
                                     <constraint firstAttribute="width" constant="140" id="awt-h5-Hsr"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SfB-0n-z2u"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzL-vj-CDd">
+                            <button opaque="NO" alpha="0.5" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzL-vj-CDd">
                                 <rect key="frame" x="198" y="536" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Gfc-Gv-GEl"/>
                                     <constraint firstAttribute="width" constant="140" id="MVe-lP-7j8"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IKT-Ta-9T0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-z6-eqZ">
+                            <button opaque="NO" alpha="0.5" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-z6-eqZ">
                                 <rect key="frame" x="198" y="507" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="qWc-n1-vYK"/>
                                     <constraint firstAttribute="height" constant="21" id="xOA-Kw-OdX"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FDl-HP-Xg9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-Ih-RYy">
+                            <button opaque="NO" alpha="0.5" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-Ih-RYy">
                                 <rect key="frame" x="198" y="478" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="alN-eK-WGi"/>
                                     <constraint firstAttribute="width" constant="140" id="yRS-Jj-Wxp"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="V95-Pz-uNK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sB-T7-sz2">
+                            <button opaque="NO" alpha="0.5" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sB-T7-sz2">
                                 <rect key="frame" x="198" y="418" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ANe-dv-epF"/>
                                     <constraint firstAttribute="width" constant="140" id="Dgn-Gj-72d"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZD3-Xe-ry5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJT-Ha-T0q">
+                            <button opaque="NO" alpha="0.5" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJT-Ha-T0q">
                                 <rect key="frame" x="198" y="389" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="4YW-O2-FBu"/>
                                     <constraint firstAttribute="height" constant="21" id="MuI-Bd-5Z0"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="r8k-i5-OV4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC6-fW-erX">
+                            <button opaque="NO" alpha="0.5" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC6-fW-erX">
                                 <rect key="frame" x="198" y="360" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="3nj-Ar-J6R"/>
                                     <constraint firstAttribute="height" constant="21" id="NJK-4w-26Q"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8ph-hS-Bbi"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqV-qE-0BF">
+                            <button opaque="NO" alpha="0.5" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqV-qE-0BF">
                                 <rect key="frame" x="198" y="300" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="0hZ-Z2-k7r"/>
                                     <constraint firstAttribute="width" constant="140" id="R0v-jF-cvG"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="GJF-QT-LW3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-5r-TI0">
+                            <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-5r-TI0">
                                 <rect key="frame" x="198" y="271" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="S3a-sl-cCg"/>
                                     <constraint firstAttribute="height" constant="21" id="gWc-r5-OqJ"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Mvs-dR-D2k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-pc-mct">
                                 <rect key="frame" x="198" y="240" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="q0n-CH-Puu"/>
                                     <constraint firstAttribute="height" constant="21" id="xHw-Ae-QLA"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="JN4-o1-8Hm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-V4-mTv">
+                            <button opaque="NO" alpha="0.5" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-V4-mTv">
                                 <rect key="frame" x="198" y="153" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1Lg-v6-1LE"/>
                                     <constraint firstAttribute="width" constant="140" id="wJX-vx-oMA"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="nyA-M5-ecj"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHq-1w-8qQ">
+                            <button opaque="NO" alpha="0.5" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHq-1w-8qQ">
                                 <rect key="frame" x="198" y="124" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="DAL-cJ-H4M"/>
                                     <constraint firstAttribute="height" constant="21" id="cc4-5u-S9t"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="nlk-nd-q9P"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-EA-eUE">
+                            <button opaque="NO" alpha="0.5" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-EA-eUE">
                                 <rect key="frame" x="198" y="182" width="140" height="21"/>
                                 <color key="backgroundColor" red="0.085228331940667257" green="1" blue="0.069660015099422989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GPIO_PIN"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="gFy-gu-qvz"/>
                                     <constraint firstAttribute="height" constant="21" id="j4m-SS-F3J"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="gpioManager:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uyO-96-HGC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.61368662118911743" green="0.80786663293838501" blue="0.99862128496170044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -587,7 +699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="310"/>
+            <point key="canvasLocation" x="683" y="282"/>
         </scene>
         <!--Ansteuerung-->
         <scene sceneID="0bi-T6-iqV">
@@ -608,7 +720,7 @@
                                 </items>
                             </navigationBar>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yep-HD-gZx" userLabel="A1_Switch">
-                                <rect key="frame" x="136" y="341.5" width="51" height="31"/>
+                                <rect key="frame" x="136" y="342" width="51" height="31"/>
                                 <connections>
                                     <action selector="a1SwitchAction:" destination="ayl-Uw-m0O" eventType="valueChanged" id="TXs-Ej-R4V"/>
                                 </connections>
@@ -619,12 +731,6 @@
                                     <action selector="a3SwitchAction:" destination="ayl-Uw-m0O" eventType="valueChanged" id="LQl-aA-jVg"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4x-gy-EiR">
-                                <rect key="frame" x="102" y="257" width="117.5" height="58.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZ4-pf-RPe" userLabel="A1_View">
                                 <rect key="frame" x="20" y="393" width="308" height="318"/>
                                 <subviews>
@@ -745,18 +851,24 @@
                                     <action selector="a2SwitchAction:" destination="ayl-Uw-m0O" eventType="valueChanged" id="Cmi-g7-YmB"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4x-gy-EiR">
+                                <rect key="frame" x="102" y="244" width="118" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vTz-YW-kLF" firstAttribute="leading" secondItem="TBq-eu-Sec" secondAttribute="trailing" constant="289" id="1c4-Ta-BxG"/>
                             <constraint firstItem="QZ4-pf-RPe" firstAttribute="top" secondItem="Yep-HD-gZx" secondAttribute="bottom" constant="20.5" id="4aa-6a-iop"/>
                             <constraint firstItem="lbd-PZ-0eE" firstAttribute="leading" secondItem="C08-a6-RMG" secondAttribute="trailing" constant="30" id="5qG-Sv-Mvy"/>
-                            <constraint firstItem="o4x-gy-EiR" firstAttribute="top" secondItem="8Wh-7O-9fp" secondAttribute="bottom" constant="237" id="5ru-Wj-9VD"/>
+                            <constraint firstItem="o4x-gy-EiR" firstAttribute="top" secondItem="8Wh-7O-9fp" secondAttribute="bottom" constant="224" id="5ru-Wj-9VD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v1J-Oz-SEb" secondAttribute="trailing" constant="-20" id="Bz7-sV-DmE"/>
                             <constraint firstItem="C08-a6-RMG" firstAttribute="leading" secondItem="QZ4-pf-RPe" secondAttribute="trailing" constant="30" id="FbB-nI-b8w"/>
                             <constraint firstItem="TBq-eu-Sec" firstAttribute="top" secondItem="8Wh-7O-9fp" secondAttribute="bottom" constant="321" id="Gim-lY-XIN"/>
                             <constraint firstItem="Y7u-Ty-UUO" firstAttribute="top" secondItem="QZ4-pf-RPe" secondAttribute="bottom" constant="8" id="JbJ-Cw-1yL"/>
-                            <constraint firstItem="Yep-HD-gZx" firstAttribute="top" secondItem="o4x-gy-EiR" secondAttribute="bottom" constant="26" id="QC0-Vo-bSp"/>
+                            <constraint firstItem="Yep-HD-gZx" firstAttribute="top" secondItem="o4x-gy-EiR" secondAttribute="bottom" constant="39" id="QC0-Vo-bSp"/>
                             <constraint firstItem="o4x-gy-EiR" firstAttribute="leading" secondItem="dRs-UF-gni" secondAttribute="leadingMargin" constant="82" id="RDV-UX-NBS"/>
                             <constraint firstItem="Y7u-Ty-UUO" firstAttribute="top" secondItem="lbd-PZ-0eE" secondAttribute="bottom" constant="8" id="Tkg-FH-rrE"/>
                             <constraint firstItem="Y7u-Ty-UUO" firstAttribute="top" secondItem="C08-a6-RMG" secondAttribute="bottom" constant="8" id="Ttg-Io-zjd"/>
@@ -802,7 +914,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="-19"/>
+            <point key="canvasLocation" x="-412" y="-14"/>
         </scene>
     </scenes>
     <resources>

@@ -90,7 +90,7 @@ class AnsteuerungVC: UIViewController , UIPickerViewDataSource,UIPickerViewDeleg
     }
     
     func dataBasePopulator(firstValue:Int,lastValue:Int){
-        for var x in firstValue...lastValue{
+        for x in firstValue...lastValue{
             pickerData.append(String(x))
         }
 

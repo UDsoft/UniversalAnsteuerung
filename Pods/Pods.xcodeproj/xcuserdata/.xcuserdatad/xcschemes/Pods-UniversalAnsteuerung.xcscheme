@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C8F07D3DC82C9258942779709573CC7E'
+               BlueprintIdentifier = '5F67CC4C419E3EC66068B4A5323F527C'
                BlueprintName = 'Pods-UniversalAnsteuerung'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-UniversalAnsteuerung.framework'>
